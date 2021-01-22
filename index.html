@@ -23,35 +23,38 @@
         </div>
     </div>
 
-    <div class="card-columns">
-        <div class="card">
-            <!-- <img class="card-img-top" src="holder.js/100x180/" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Search For A City</h4>
-                <p class="card-text">Text</p> -->
-            <form id="movie-form">
-                <label for="movie-input">Search for a city</label>
-                <input type="text" id="movie-input"><br>
 
-                <!-- This button will trigger our AJAX call -->
-                <input id="find-movie" type="submit" value="Search">
-            </form>
+    <div class="container-fluid">
+
+        <div class="row">
+
+
+            <div class="col-4 border">
+                <h1>Search For A City</h1>
+                <div class="input-group mb-3">
+                    <input id="searchBox" type="text" class="form-control" placeholder="City" aria-label=""
+                        aria-describedby="button-addon2">
+                    <button id="searchButton" class="btn btn-outline-secondary ml-1" type="button"
+                        id="button-addon2">Search</button>
+                </div>
+
+                <h3>Previously Searched Cities</h3>
+
+                <ul id="previousCities" class="list-group">
+
+                </ul>
+
+            </div>
+
+            <div class="col-8 border">
+                <h1>TEST TEXT</h1>
+
+            </div>
 
         </div>
-    </div>
-
-
-
-    <div>
-        <div>
-            <h4>Title</h4>
-            <p>Text</p>
-        </div>
-    </div>
 
     </div>
 
-    </div>
 
     <!-- Optional JavaScript -->
     <script src="index.js"></script>
