@@ -50,28 +50,27 @@
             <div class="col-8 border">
                 <!-- I need 2 rows -->
                 <div id="todayForecast" class="row">
-                    <h1>Today's Forecast</h1>
-                </div>
-                <!-- I need 5 columns within the second row -->
-                <h1>5 day forecast</h1>
-                <div class="row">
-                    <div id="fiveDay1" class="col-2">
-                        <h5>Test Text</h5>
-                    </div>
-                    <div id="fiveDay2" class="col-2">
-                        <h5>Test Text</h5>
-                    </div>
-                    <div id="fiveDay3" class="col-2">
-                        <h5>Test Text</h5>
-                    </div>
-                    <div id="fiveDay4" class="col-2">
-                        <h5>Test Text</h5>
-                    </div>
-                    <div id="fiveDay5" class="col-2">
-                        <h5>Test Text</h5>
-                    </div>
-                </div>
+                    <!-- <h1>Today's Forecast</h1> -->
 
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 id="currentCity"></h1>
+                            <p id="tempMain"></p>
+                            <div>
+                                <img id="iconDiv" src="">
+                            </div>
+                            <p id="currentHumidity"></p>
+                            <p id="currentWind"></p>
+                            <p id="uvIndex"></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <h1>5 day forecast</h1>
+                <div id="fiveDayForecast" class="row">
+                </div>
             </div>
 
         </div>
@@ -81,7 +80,7 @@
 
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
