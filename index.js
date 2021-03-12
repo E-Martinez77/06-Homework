@@ -203,5 +203,3 @@ function getCities() {
 if (localStorage) {
   getCities();
 }
-
-// $("p").append("Some appended text.");
