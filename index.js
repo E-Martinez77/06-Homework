@@ -83,7 +83,7 @@ function citySearch(city) {
       console.log(lattitude, longitude);
 
       var queryURL2 =
-        "http://api.openweathermap.org/data/2.5/uvi?lat=" +
+        "https://api.openweathermap.org/data/2.5/uvi?lat=" +
         lattitude +
         "&lon=" +
         longitude +
@@ -98,7 +98,7 @@ function citySearch(city) {
       var iconCode = response.weather[0].icon;
       $("#iconDiv").attr(
         "src",
-        "http://openweathermap.org/img/w/" + iconCode + ".png"
+        "https://openweathermap.org/img/w/" + iconCode + ".png"
       );
       $("#currentHumidity").text("Humidity: " + response.main.humidity + " %");
       $("#currentWind").text(" Wind Speed: " + response.wind.speed + " MPH");
@@ -120,7 +120,7 @@ function citySearch(city) {
     // "&appid=" +
     // APIKey;
 
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     city +
     "&units=imperial" +
     "&appid=" +
@@ -155,7 +155,7 @@ function citySearch(city) {
       var fiveIcon = response.list[i * 8].weather[0].icon;
       newImg.attr(
         "src",
-        "http://openweathermap.org/img/w/" + fiveIcon + ".png"
+        "https://openweathermap.org/img/w/" + fiveIcon + ".png"
       );
 
       var fiveTemp = response.list[i * 8].main.temp;
